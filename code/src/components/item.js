@@ -24,7 +24,7 @@ class Item extends React.Component {
           </div>
 
           <div>
-            <button onClick = {this.deleteTodo}>Ta bort</button>
+            <button onClick = {this.deleteTodo}>Delete</button>
           </div>
         </form>
       </div>

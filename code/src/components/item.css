@@ -12,10 +12,16 @@
 
 button {
   margin-left: 30px;
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: #eeebdd;
+  font-size: 15px;
 }
 
 form {
   align-items:baseline;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
