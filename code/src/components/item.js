@@ -1,5 +1,6 @@
 import React from "react"
 import "./item.css"
+
 class Item extends React.Component {
 
   handleCheckboxChange = () => {
@@ -12,9 +13,9 @@ class Item extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="form-container">
         <form >
-          <div className={this.props.done ? "done" : "not-done" } >
+          <div className={this.props.done ? "done" : "not-done"}>
             <label>
               {this.props.text}
               <input
@@ -24,7 +25,7 @@ class Item extends React.Component {
           </div>
 
           <div>
-            <button onClick = {this.deleteTodo}>Delete</button>
+            <button onClick={this.deleteTodo}>Delete</button>
           </div>
         </form>
       </div>

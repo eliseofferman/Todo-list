@@ -1,4 +1,5 @@
 import React from "react"
+
 class Form extends React.Component {
 
   constructor(props) {
@@ -27,7 +28,8 @@ class Form extends React.Component {
       <div>
         <form onSubmit={this.handleOnSubmit}>
           <label>
-            <input type="text"
+            <input
+              type="text"
               name="toDo"
               value={this.state.newToDo}
               onChange={this.handleOnChange} />
