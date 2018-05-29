@@ -53,19 +53,19 @@ class App extends React.Component {
 
   render() {
     return (
-        <div className="container">
-          <h1>Your Todo List</h1>
-          <Form addToList={this.handleNewToDo} />
-          {this.state.items.map((listItem, index) => (
-            <Item
-              index={index}
-              key={listItem.id}
-              text={listItem.text}
-              done={listItem.done}
-              checking={this.handleChecking}
-              callbackDelete={this.handelDelete} />
-          ))}
-        </div>
+      <div className="container">
+        <h1>Your Todo List</h1>
+        <Form addToList={this.handleNewToDo} />
+        {this.state.items.map((listItem, index) => (
+          <Item
+            index={index}
+            key={listItem.id}
+            text={listItem.text}
+            done={listItem.done}
+            checking={this.handleChecking}
+            callbackDelete={this.handelDelete} />
+        ))}
+      </div>
     )
   }
 

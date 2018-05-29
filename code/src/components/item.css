@@ -1,22 +1,22 @@
 .done {
   color: #4caf50;
   font-size: 20px;
-  margin: 10px;
+  /* margin: 10px; */
   text-decoration: line-through;
 }
 
 .not-done {
   font-size: 20px;
-  margin: 10px;
+  /* margin: 10px; */
 }
 
 button {
-  margin-left: 30px;
   height: 30px;
   width: 100px;
   border-radius: 5px;
   background-color: #eeebdd;
   font-size: 15px;
+  font-family: monospace;
 }
 
 form{
@@ -27,8 +27,16 @@ form{
   background-color: #b0b0b0;
 }
 
-/* .form-container {
-  width: 100%; */
 
-  /* padding: 10px 50px; */
-/* } */
+.container input {
+  width: 25px;
+  height: 25px;
+  margin: 0px 30px 0px 0px;
+  padding: 0px;
+  cursor: pointer;
+}
+
+label {
+  font-size: 25px;
+  cursor: pointer;
+}

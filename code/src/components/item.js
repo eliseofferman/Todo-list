@@ -16,11 +16,12 @@ class Item extends React.Component {
       <div className="form-container">
         <form >
           <div className={this.props.done ? "done" : "not-done"}>
-            <label>
-              {this.props.text}
+            <label className="container">
+
               <input
                 type="checkbox"
                 onChange={this.handleCheckboxChange} />
+              {this.props.text}
             </label>
           </div>
 

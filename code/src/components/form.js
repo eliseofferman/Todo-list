@@ -1,4 +1,5 @@
 import React from "react"
+import "./form.css"
 
 class Form extends React.Component {
 
@@ -27,10 +28,12 @@ class Form extends React.Component {
     return (
       <div>
         <form onSubmit={this.handleOnSubmit}>
-          <label>
+          <label className="test">
             <input
+              className="test2"
               type="text"
               name="toDo"
+              placeholder="Add new"
               value={this.state.newToDo}
               onChange={this.handleOnChange} />
           </label>
