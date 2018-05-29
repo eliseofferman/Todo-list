@@ -9,3 +9,10 @@ body {
   background: #eca234;
   text-align: center;
 }
+
+
+@media (max-width: 800px) {
+  .container {
+    width: 70%;
+  }
+}
